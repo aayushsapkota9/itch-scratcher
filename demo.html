@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khata Academy - Course Outline (Demo / Test)</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f3f4f6;
+      padding: 40px;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .accordion {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      padding: 16px;
+      margin-bottom: 16px;
+      transition: all 0.2s;
+    }
+    .accordion__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .d-flex { display: flex; }
+    .align-items-center { align-items: center; }
+    .justify-content-between { justify-content: space-between; }
+    .cursor-pointer { cursor: pointer; }
+    .size-48 { width: 48px; height: 48px; }
+    .rounded-12 { border-radius: 12px; }
+    .rounded-16 { border-radius: 16px; }
+    .rounded-20 { border-radius: 20px; }
+    .d-flex-center { display: flex; align-items: center; justify-content: center; }
+    .bg-primary-20 { background-color: #e0e7ff; color: #4338ca; }
+    .bg-gray-100 { background-color: #f3f4f6; }
+    .bg-gray-200 { background-color: #e5e7eb; }
+    .text-primary { color: #4f46e5; fill: #4f46e5; }
+    .text-gray-400 { color: #9ca3af; }
+    .text-gray-500 { color: #6b7280; }
+    .text-dark { color: #111827; }
+    .font-12 { font-size: 12px; }
+    .font-14 { font-size: 14px; }
+    .font-weight-bold { font-weight: 700; }
+    .d-block { display: block; }
+    .ml-8 { margin-left: 8px; }
+    .mt-4 { margin-top: 4px; }
+    .mt-20 { margin-top: 20px; }
+    .mb-12 { margin-bottom: 12px; }
+    .p-12 { padding: 12px; }
+    .gap-8 { gap: 8px; }
+    .sidebar-content-item {
+      background: #ffffff;
+      border: 1px solid #f3f4f6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Khata Academy Course Chapters (Demo Page)</h2>
+    <p style="color: #6b7280; margin-bottom: 24px; font-size: 14px;">
+      This page mirrors the Khata Academy DOM structure to test the <strong>ItchScratcher</strong> extension.
+    </p>
+
+    <div id="chaptersAccordion">
+      <!-- Chapter 2: 2 of 3 Done (User's Example) -->
+      <div class="js-accordion-parent accordion p-12 rounded-20 bg-gray-100 mb-16">
+        <div class="accordion__title d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center cursor-pointer" href="#collapseChapter5" data-parent="#chaptersAccordion" role="button" data-toggle="collapse">
+            <div class="d-flex-center size-48 rounded-12 bg-primary-20">
+              <svg width="24px" height="24px" class="icons text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.24 2h-1.9C3.15 2 2 3.15 2 5.33v1.9c0 2.18 1.15 3.33 3.33 3.33h1.9c2.18 0 3.33-1.15 3.33-3.33v-1.9C10.57 3.15 9.42 2 7.24 2z"></path>
+                <path d="M18.67 2h-1.9c-2.18 0-3.33 1.15-3.33 3.33v1.9c0 2.18 1.15 3.33 3.33 3.33h1.9c2.18 0 3.33-1.15 3.33-3.33v-1.9C22 3.15 20.85 2 18.67 2z" opacity=".4"></path>
+                <path d="M18.67 13.43h-1.9c-2.18 0-3.33 1.15-3.33 3.33v1.9c0 2.18 1.15 3.33 3.33 3.33h1.9c2.18 0 3.33-1.15 3.33-3.33v-1.9c0-2.18-1.15-3.33-3.33-3.33z"></path>
+                <path d="M7.24 13.43h-1.9C3.15 13.43 2 14.58 2 16.76v1.9C2 20.85 3.15 22 5.33 22h1.9c2.18 0 3.33-1.15 3.33-3.33v-1.9c.01-2.19-1.14-3.34-3.32-3.34z" opacity=".4"></path>
+              </svg>
+            </div>
+            <div class="ml-8">
+              <div class="font-14 font-weight-bold">02. Business Fundamentals</div>
+              <div class="d-flex align-items-center mt-4 font-12 text-gray-500">3 Parts</div>
+            </div>
+          </div>
+
+          <div class="js-accordion-collapse-arrow collapse-arrow-icon d-flex cursor-pointer" href="#collapseChapter5" data-parent="#chaptersAccordion" role="button" data-toggle="collapse">
+            <svg width="16px" height="16px" class="icons text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.92 15.05L13.4 8.53c-.77-.77-2.03-.77-2.8 0l-6.52 6.52"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div id="collapseChapter5" class="js-accordion-collapse accordion__collapse pt-0 mt-20 border-0 show" role="tabpanel">
+          <!-- Lesson 2.1 (Checked) -->
+          <div class="sidebar-content-item d-flex align-items-center justify-content-between mb-12 p-12 rounded-16 cursor-pointer js-content-tab-item" data-type="file" data-id="6">
+            <div class="d-flex align-items-center">
+              <div class="position-relative d-flex-center size-48 rounded-12 bg-gray-200">
+                <svg height="24" width="24" class="text-gray-500" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <div class="ml-8">
+                <span class="d-block font-weight-bold font-14 text-dark">2.1 Types of Business</span>
+                <span class="d-block font-12 text-gray-500 mt-4">Video</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-8">
+              <div>
+                <svg width="16px" height="16px" class="icons text-primary" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" opacity=".4"></path>
+                  <path d="M10.58 15.58a.75.75 0 01-.53-.22l-2.83-2.83a.754.754 0 010-1.06c.29-.29.77-.29 1.06 0l2.3 2.3 5.14-5.14c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06l-5.67 5.67a.75.75 0 01-.53.22z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lesson 2.2 (Checked) -->
+          <div class="sidebar-content-item d-flex align-items-center justify-content-between mb-12 p-12 rounded-16 cursor-pointer js-content-tab-item" data-type="file" data-id="7">
+            <div class="d-flex align-items-center">
+              <div class="position-relative d-flex-center size-48 rounded-12 bg-gray-200">
+                <svg height="24" width="24" class="text-gray-500" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <div class="ml-8">
+                <span class="d-block font-weight-bold font-14 text-dark">2.2 Business Model</span>
+                <span class="d-block font-12 text-gray-500 mt-4">Video</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-8">
+              <div>
+                <svg width="16px" height="16px" class="icons text-primary" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" opacity=".4"></path>
+                  <path d="M10.58 15.58a.75.75 0 01-.53-.22l-2.83-2.83a.754.754 0 010-1.06c.29-.29.77-.29 1.06 0l2.3 2.3 5.14-5.14c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06l-5.67 5.67a.75.75 0 01-.53.22z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lesson 2.3 (Unchecked) -->
+          <div class="sidebar-content-item d-flex align-items-center justify-content-between mb-12 p-12 rounded-16 cursor-pointer js-content-tab-item" data-type="file" data-id="1258">
+            <div class="d-flex align-items-center">
+              <div class="position-relative d-flex-center size-48 rounded-12 bg-gray-200">
+                <svg height="24" width="24" class="text-gray-500" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <div class="ml-8">
+                <span class="d-block font-weight-bold font-14 text-dark">Financial Transaction</span>
+                <span class="d-block font-12 text-gray-500 mt-4">Document</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-8">
+              <!-- unchecked -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter 8: 0 of 1 Done (Unchecked) -->
+      <div class="js-accordion-parent accordion p-12 rounded-20 bg-gray-100 mb-16">
+        <div class="accordion__title d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center cursor-pointer" role="button">
+            <div class="d-flex-center size-48 rounded-12 bg-primary-20">
+              <svg width="24px" height="24px" class="icons text-primary" viewBox="0 0 24 24" fill="currentColor"><rect width="18" height="18" x="3" y="3" rx="2"/></svg>
+            </div>
+            <div class="ml-8">
+              <div class="font-14 font-weight-bold">08. Getting Started</div>
+              <div class="d-flex align-items-center mt-4 font-12 text-gray-500">1 Part</div>
+            </div>
+          </div>
+          <div class="js-accordion-collapse-arrow collapse-arrow-icon d-flex cursor-pointer">
+            <svg width="16px" height="16px" class="icons text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </div>
+        <div class="js-accordion-collapse accordion__collapse pt-0 mt-20 border-0 show">
+          <div class="sidebar-content-item d-flex align-items-center justify-content-between mb-12 p-12 rounded-16 cursor-pointer js-content-tab-item" data-type="file" data-id="1477">
+            <div class="d-flex align-items-center">
+              <div class="position-relative d-flex-center size-48 rounded-12 bg-gray-200">
+                <svg height="24" width="24" class="text-gray-500" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <div class="ml-8">
+                <span class="d-block font-weight-bold font-14 text-dark">8.1 Getting Started</span>
+                <span class="d-block font-12 text-gray-500 mt-4">Video</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-8">
+              <!-- unchecked -->
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Canva Embed Demo Section (from user's snippet) -->
+    <div style="margin-top: 36px; padding-top: 24px; border-top: 2px dashed #e5e7eb;">
+      <h3 style="margin-bottom: 8px;">Active Lesson: Canva Slide Embed</h3>
+      <p style="color: #6b7280; font-size: 13px; margin-bottom: 16px;">
+        The extension detects this Canva embed and adds a gradient <strong>"Open Canva"</strong> button on the sidebar above the chapters, opening directly to <code>/view</code> (stripping <code>?embed</code>).
+      </p>
+
+      <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+    <!-- Audio / Video Volume Limiter Test Section -->
+    <div style="margin-top: 36px; padding-top: 24px; border-top: 2px dashed #e5e7eb;">
+      <h3 style="margin-bottom: 8px;">Audio / Video Volume Limiter Test</h3>
+      <p style="color: #6b7280; font-size: 13px; margin-bottom: 16px;">
+        Test the volume limiter and 0% mute. Click "Play Test Audio" below, then open the extension popup and adjust the volume ceiling.
+      </p>
+
+      <div style="background: #ffffff; padding: 18px; border-radius: 12px; border: 1px solid #e5e7eb; display: flex; align-items: center; justify-content: space-between;">
+        <div>
+          <div style="font-weight: 600; font-size: 14px;">HTML5 Audio Element</div>
+          <div id="audioStatus" style="font-size: 12px; color: #6b7280; margin-top: 2px;">Status: Paused</div>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button id="playAudioBtn" style="padding: 8px 14px; background: #4f46e5; color: #fff; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">
+            ▶ Play Sound
+          </button>
+          <button id="stopAudioBtn" style="padding: 8px 14px; background: #e5e7eb; color: #374151; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">
+            ⏹ Stop
+          </button>
+        </div>
+      </div>
+
+      <audio id="testAudioEl" loop src="https://www.w3schools.com/html/horse.mp3"></audio>
+    </div>
+  </div>
+
+  <script>
+    const audioEl = document.getElementById('testAudioEl');
+    const playBtn = document.getElementById('playAudioBtn');
+    const stopBtn = document.getElementById('stopAudioBtn');
+    const statusText = document.getElementById('audioStatus');
+
+    playBtn.addEventListener('click', () => {
+      audioEl.play().then(() => {
+        statusText.textContent = 'Status: Playing (Volume: ' + Math.round(audioEl.volume * 100) + '%, Muted: ' + audioEl.muted + ')';
+      }).catch(err => {
+        statusText.textContent = 'Click play to start';
+      });
+    });
+
+    stopBtn.addEventListener('click', () => {
+      audioEl.pause();
+      statusText.textContent = 'Status: Paused';
+    });
+
+    audioEl.addEventListener('volumechange', () => {
+      statusText.textContent = 'Status: Playing (Volume: ' + Math.round(audioEl.volume * 100) + '%, Muted: ' + audioEl.muted + ')';
+    });
+  </script>
+</body>
+</html>
